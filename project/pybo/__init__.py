@@ -22,4 +22,9 @@ def create_app():
     app.register_blueprint(main_views.bp)
     app.register_blueprint(question_views.bp)
     app.register_blueprint(answer_views.bp)
+
+    # vlfxj
+    from .filter import format_datetime
+    app.jinja_env.filters['datetime'] = format_datetime
+        
     return app
