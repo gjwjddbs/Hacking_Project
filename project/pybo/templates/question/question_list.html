@@ -20,9 +20,9 @@
                 {%if question.answer_set|length > 0%}
                 <span class="text-danger small ml-2">
                     {{question.answer_set|length}}
-                </span>
-                {%endif%}
+                </span>   
                 <!--답변 개수 표시 끝-->
+                {%endif%}
             </td>
             <td>{{question.create_date|datetime}}</td>
         </tr>
